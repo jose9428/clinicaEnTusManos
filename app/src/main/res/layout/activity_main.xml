@@ -115,6 +115,7 @@
                         android:layout_marginBottom="36dp"
                         android:layout_toRightOf="@id/dontHaveAccount"
                         android:minHeight="48dp"
+                        android:onClick="RegistrarCuenta"
                         android:text="Registrate Aquí"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="@dimen/textsize_dontHaveAccount" />

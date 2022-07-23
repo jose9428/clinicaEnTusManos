@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainRegistraCuenta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_horizontal_login"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/lbTitulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="Crear Nueva Cuenta"
+                        android:textColor="@color/editTextColorBlack"
+                        android:textSize="20dp"
+                        />
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:boxStrokeColor="#0000FF"
+                    app:boxStrokeWidth="2dp"
+                    app:helperTextEnabled="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:hintTextColor="@color/black"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lbNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Nombres"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:boxStrokeColor="#0000FF"
+                    app:boxStrokeWidth="2dp"
+                    app:helperTextEnabled="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:hintTextColor="@color/black"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lbApellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Apellidos"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:boxStrokeColor="#0000FF"
+                    app:boxStrokeWidth="2dp"
+                    app:helperTextEnabled="true"
+                    app:counterEnabled="true"
+                    app:hintTextColor="@color/black"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lbFechaNac"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Fecha Nacimiento (yyyy-mm-dd)"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:boxStrokeColor="#0000FF"
+                    app:boxStrokeWidth="2dp"
+                    app:helperTextEnabled="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:hintTextColor="@color/black"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lbDNI"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="DNI"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:boxStrokeColor="#0000FF"
+                    app:boxStrokeWidth="2dp"
+                    app:helperTextEnabled="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:hintTextColor="@color/black"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lbUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Correo electrónico"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:boxStrokeColor="#0000FF"
+                    app:boxStrokeWidth="2dp"
+                    app:helperTextEnabled="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="30"
+                    app:hintTextColor="@color/black"
+                    app:endIconMode="password_toggle">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/lbPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:hint="Contraseña"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registrate Aqui"
+
+                    app:backgroundTint="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/dontHaveAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="99dp"
+                        android:text="¿YA TIENES UNA CUENTA?"
+                        android:textColor="@color/editTextColorBlack"
+                        android:textSize="@dimen/textsize_dontHaveAccount"
+                        />
+
+                    <TextView
+                        android:id="@+id/createHere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="-154dp"
+                        android:layout_marginBottom="55dp"
+                        android:layout_toRightOf="@id/dontHaveAccount"
+                        android:minHeight="48dp"
+                        android:onClick="IniciarSesion"
+                        android:text="Iniciar Sesión"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/textsize_dontHaveAccount" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
