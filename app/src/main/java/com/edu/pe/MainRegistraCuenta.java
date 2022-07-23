@@ -46,16 +46,13 @@ public class MainRegistraCuenta extends AppCompatActivity {
         obj.setNombres(txtNombres.getText().toString());
         obj.setApellidos(txtApellidos.getText().toString());
         obj.setDni(txtDni.getText().toString());
-
         Call<APIResponse> call = api.Registrar(obj.getCorreo(), obj.getPass(), obj.getFecha_Nacimiento(),
                 obj.getDni(),obj.getNombres(),obj.getApellidos(),"registro");
-
         call.enqueue(new Callback<APIResponse>() {
             @Override
             public void onResponse(Call call, Response response) {
                 if(response.isSuccessful()){
                     APIResponse resp = (APIResponse)response.body();
-
                     if(resp.getResultado().equals("1")){
                         LimpiarCasillas();
                         Toast.makeText(getApplicationContext() , "Cuenta creada de forma correcta", Toast.LENGTH_LONG).show();
@@ -63,7 +60,6 @@ public class MainRegistraCuenta extends AppCompatActivity {
                         Toast.makeText(getApplicationContext() , "No se ha podido crear cuenta", Toast.LENGTH_LONG).show();
                     }
                 }
-
             }
             @Override
             public void onFailure(Call call, Throwable t) {

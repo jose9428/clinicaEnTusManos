@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext() , "Correo y/o clave contraseña" , Toast.LENGTH_LONG).show();
             }
         });
-
     }
     public void IngresarMenuPrincipal(){
         Intent intent = new Intent(this , MainMenuPrincipal.class);

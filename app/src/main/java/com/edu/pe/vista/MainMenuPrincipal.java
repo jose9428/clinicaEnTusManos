@@ -34,6 +34,9 @@ public class MainMenuPrincipal extends AppCompatActivity {
                 case R.id.nuevaCitaFragment:
                     loadFragment(reservaCitaFrag);
                     break;
+                case R.id.misCitasFragment:
+                    loadFragment(inicioFrag);
+                    break;
                 case R.id.logoutFragment:
                     Logout();
                     break;
