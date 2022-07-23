@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import com.edu.pe.api.UsuarioApi;
 import com.edu.pe.conexion.ConexionAPI;
-import com.edu.pe.dao.UsuarioDAO;
 import com.edu.pe.modelo.Usuario;
 
 import retrofit2.Call;
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         txtCorreo=(EditText) findViewById(R.id.lbCorreo);
         txtPass=(EditText) findViewById(R.id.lbPassword);
-        txtCorreo.setText("test112@gmail.com");
+        txtCorreo.setText("manuel2@gmail.com");
         txtPass.setText("123456");
         api = ConexionAPI.getConnection().create(UsuarioApi.class);
     }

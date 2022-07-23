@@ -6,7 +6,7 @@ public class Usuario {
     int id_Usuario;
     String nombres;
     String apellidos;
-
+    
     @Override
     public String toString() {
         return "Usuario{" +
