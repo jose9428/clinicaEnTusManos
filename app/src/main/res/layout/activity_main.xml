@@ -54,7 +54,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/lbUsername"
+                        android:id="@+id/lbCorreo"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:hint="Correo electrónico"
@@ -87,7 +87,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Iniciar Sesión"
-
+                    android:onClick="IniciarSesion"
                     app:backgroundTint="@color/black" />
 
                 <RelativeLayout
