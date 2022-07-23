@@ -28,4 +28,8 @@ public class InicioFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_inicio, container, false);
         return view;
     }
+
+    public void GuardarCita(){
+
+    }
 }
