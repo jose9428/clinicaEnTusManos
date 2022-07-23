@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.edu.pe.api.UsuarioApi;
 import com.edu.pe.conexion.ConexionAPI;
 import com.edu.pe.modelo.Usuario;
+import com.edu.pe.vista.MainMenuPrincipal;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -42,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback() {
             @Override
             public void onResponse(Call call, Response response) {
-                Log.w("Respuesta:" ,""+ response.body());
                 if( response.body() != null){
+                    IngresarMenuPrincipal();
                     Toast.makeText(getApplicationContext() , "Sesión Iniciada de forma correcta" , Toast.LENGTH_LONG).show();
                 }else{
                     Toast.makeText(getApplicationContext() , "Correo y/o contraseña incorrecto" , Toast.LENGTH_LONG).show();
@@ -56,7 +57,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+    public void IngresarMenuPrincipal(){
+        Intent intent = new Intent(this , MainMenuPrincipal.class);
+        startActivity(intent);
+    }
     public void RegistrarCuenta(View v){
         Intent intent = new Intent(this , MainRegistraCuenta.class);
         startActivity(intent);
